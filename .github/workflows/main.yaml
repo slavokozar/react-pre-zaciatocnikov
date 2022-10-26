@@ -4,7 +4,7 @@
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 env:
   githubEmail: slavo.kozar@gmail.com
-  deployToRepo: react-pre-zaciatocnikov-zima-2022
+  deployToRepo: react-pre-zaciatocnikov
 
 name: Github Pages Astro CI
 
