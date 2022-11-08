@@ -15,7 +15,15 @@ import lekcie from './lekcie';
 				<section>
 					<h3>Lekcia {index + 1} - {lekcia.topic}</h3>
 					<p>{lekcia.perex}</p>
-					<a href={`/prezentacia_lekcia${index + 1}.pdf`} target="_blank">Prezentácia</a>
+					{
+						<ul>
+							{
+								lekcia.links.map((link) => (
+									<li><a href={link.href} target="_blank">{link.label}</a></li>
+								))
+							}
+						</ul>
+					}
 				</section>
 			))
 		}
