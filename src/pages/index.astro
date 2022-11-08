@@ -3,37 +3,18 @@
 import Layout from '../layouts/Layout.astro';
 // You can import components from any supported Framework here!
 
-const lekcie = [
-	{
-		topic: 'Úvod do Webu a Reactu'
-	},
-	{
-		topic: 'Props a State'
-	},
-	{
-		topic: 'Formuláre, nekontrolované a kontrolované komponenty'
-	},
-	{
-		topic: 'Zoznamy, práca s poliami dát'
-	},
-	{
-		topic: 'Asynchrónne načítavanie dát - AJAX'
-	},
-	{
-		topic: 'Distribúcia stavu komponenty - Lifting state up'
-	},
-]
-
+import lekcie from './lekcie';
 
 ---
 <Layout>
 	<div class="container">
-		<h1>React pre začiatočníkov</h1>
+		<h1>Lekcie</h1>
 
 		{
 			lekcie.map((lekcia, index) => (
 				<section>
 					<h3>Lekcia {index + 1} - {lekcia.topic}</h3>
+					<p>{lekcia.perex}</p>
 					<a href={`/react_pre_zaciatocnikov_-_lekcia${index + 1}.pdf`} download="download">Prezentácia</a>
 				</section>
 			))
