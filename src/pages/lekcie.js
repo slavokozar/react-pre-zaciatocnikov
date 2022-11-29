@@ -30,12 +30,22 @@ const lekcie = [
     {
         topic: 'Formuláre, nekontrolované a kontrolované komponenty',
         perex: '',
-        links: []
+        links: [
+            {
+                href: `prezentacia_lekcia3.pdf`,
+                label: 'Prezentácia'
+            }
+]
     },
     {
         topic: 'Zoznamy, práca s poliami dát',
         perex: '',
-        links: []
+        links: [
+            {
+                href: `prezentacia_lekcia4.pdf`,
+                label: 'Prezentácia'
+            }
+]
     },
     {
         topic: 'Asynchrónne načítavanie dát - AJAX',
